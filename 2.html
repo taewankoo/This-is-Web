@@ -4,6 +4,9 @@
   <title>WHO IS THIS GUY? - LICENSE</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin:0;
+  }
     a {color:black;
       text-decoration: none;
     }
@@ -12,63 +15,68 @@
     h1 {
       font-size:35px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
     }
- div {float: left;}
-   .a {margin-left:0; margin-right: auto;}
-   .b {margin-left:145px; margin-right: 0;}
-   .c {margin-left:140px; margin-right: auto;}
+    ol{
+      border-right:1px solid gray;
+      width: 150px;
+      margin:5px;
+      padding: 20px;
+    }
+  #grid{
+    display: grid;
+    grid-template-columns: 220px 1fr ;
+  }
   </style>
 </head>
 <body>
   <h1><a href="index.html">WHO IS THIS GUY?</a></h1>
-<ol>
+<div id="grid">
+  <div>
+ <ol>
   <li> <a href="1.html" class="saw">INTRODUCE</a></li>
   <li> <a href="2.html" class="saw" id="active" >LICENSE</a></li>
   <li> <a href="3.html">PORTFOLIO</a></li>
-  <li> <a href="4.html">POTENTIAL</a></li>
-</ol>
-<!--
-  <h1><a href="index.html"><font color="red">WHO IS THIS GUY?</font></a></h1>
-<ol>
-  <li> <a href="1.html"><font color="red">INTRODUCE</font></a></li>
-  <li> <a href="2.html"><font color="red">LICENSE</font></a></li>
-  <li> <a href="3.html"><font color="red">PORTFOLIO</font></a></li>
-  <li> <a href="4.html"><font color="red">POTENTIAL</font></a></li>
-</ol>
--->
-<h2>LICENSE 자격증</h2>
-<ul>
-  <li>Driver's Lisense Type II Regular (up to 10-seater vehicle with GVWR less than 4 tons)</li>
-  <li>Craftsman Computer Aided Architectural Drawing</li>
-  <li>Engineer Interior Architecture</li>
-</ul>
-<br>
-<h2>PROGRAMME</h2>
+  <li> <a href="4.html">POTENTIAL</a></li></div>
+  <div>
+    <h2>LICENSE 자격증</h2>
+    <ul>
+      <li>Driver's Lisense Type II Regular (up to 10-seater vehicle with GVWR less than 4 tons)</li>
+      <li>Craftsman Computer Aided Architectural Drawing</li>
+      <li>Engineer Interior Architecture</li>
+    </ul>
+    <div>
+  <br>
+    <h2>PROGRAMME</h2>
+      <h4 >Adobe</h4>
+    <ul>
+      <li>  PHOTOSHOP</li>
+      <li>  ILLUSTRATOR</li>
+      <li>  AFTEREFFECT</li>
+      <li>  INDESIGN</li>
+    </ul>
 
-<div class="a">
-  <h4 >Adobe</h4>
-<ul>
-  <li>  PHOTOSHOP</li>
-  <li>  ILLUSTRATOR</li>
-  <li>  AFTEREFFECT</li>
-  <li>  INDESIGN</li>
-</ul></div>
-<div class="b">
-  <h4>Modeling</h4>
-<ul>
-  <li>  SKETCHUP</li>
-  <li>  3D3MAX</li>
-  <li>  BLENDER</li>
-  <li>  RHYNO</li></div>
-</ul>
+      <h4>Modeling</h4>
+    <ul>
+      <li>  SKETCHUP</li>
+      <li>  3D3MAX</li>
+      <li>  BLENDER</li>
+      <li>  RHYNO</li>
+    </ul>
 
-<div class="c">
- <h4>Rendering</h4>
-<ul>
-  <li> LUMION</li>
-  <li> ENSCAPE</li>
-  <li> VRAY</li>
-</ul></div>
+
+     <h4>Rendering</h4>
+    <ul>
+      <li> LUMION</li>
+      <li> ENSCAPE</li>
+      <li> VRAY</li>
+    </ul>
+  </div>
+  </div>
+</div>
+
 
 </body>
 </html>
