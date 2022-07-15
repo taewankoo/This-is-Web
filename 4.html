@@ -3,33 +3,112 @@
 <head>
   <title>WHO IS THIS GUY? - POTENTIAL</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+    overflow: overlay;
+  }
+    a {color:black;
+      text-decoration: none;
+    }
+  #active{color:red;}
+  h1 {
+    font-size:35px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+   }
+   body::-webkit-scrollbar {
+     width:10px;
+   }
+   body::-webkit-scrollbar-thumb {
+     background-color: rgba(0,0,0, 0.3);
+     border-radius: 100px;
+   }
+   #grid ol{
+      border-right:1px solid gray;
+      width: 150px;
+      margin:0px;
+      padding: 20px;
+      padding-left: 33px;
+    }
+  #grid{
+    display: grid;
+    grid-template-columns: 214px 1fr ;
+  }
+  #article{
+  padding-left: 20px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1 {
+      border-bottom: none;
+    }
+  }
+  .video{
+    position: relative;
+    padding-bottom: 45%;
+    height:0;
+    overflow: hidden;
+  }
+  .video iframe,
+  .video object,
+  .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+  }
+  .video{
+   width: 80%;
+  }
+
+  h5
+  {overflow: overlay;
+  margin:0;}
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WHO IS THIS GUY?</a></h1>
-<ol>
-  <li> <a href="1.html">INTRODUCE</a></li>
-  <li> <a href="2.html">LICENSE</a></li>
-  <li> <a href="3.html">PORTFOLIO</a></li>
-  <li> <a href="4.html">POTENTIAL</a></li>
-</ol>
-<h2>POTENTIAL 잠재력</h2>
-<br><h3>HE CAN CREATE A LOT OF CONTENTS!</h3>
-<ul>
-<li><strong>CREATE VIDEO CONTENTS.</strong></li>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4vUoq3xnqtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-    <br> <a href="https://youtu.be/4vUoq3xnqtE" target="_blank" title="어때 지리지?">
-    THIS IS THE FIRST VIDEO WHAT I MADE.</a>
-<p><br>
-<li>  <strong>TAKE BEAUTIFUL IMAGES FROM VIRTUAL SPACES.</strong></li>
-<br>  <img src="image1.jpg" width="440px">
-<br>  <img src="image2.jpg" width="440px"> Commercial Design
-<br>  <p><img src="living.png" width="440px"> Living Design</p>
+<div id="grid">
+  <ol>
+    <li> <a href="1.html">INTRODUCE</a></li>
+    <li> <a href="2.html">LICENSE</a></li>
+    <li> <a href="3.html">PORTFOLIO</a></li>
+    <li> <a href="4.html" id="active">POTENTIAL</a></li>
+  </ol>
 
-<p><br>
-  <li><strong>EXPRESSING CREATED SPACE AS A DRAWING</strong></li>
-  <p><img src="plan.png" width="440px">
-<img src="plan2.png" width="440px"> Floor Plan</p>
-</ul>
+ <div id="article">
+  <h2>POTENTIAL 잠재력</h2>
+  <br><h3>HE CAN CREATE A LOT OF CONTENTS!</h3>
+  <ul>
+  <li><strong>CREATE VIDEO CONTENTS.</strong></li>
+  <p>
+    <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4vUoq3xnqtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+      <h5>THIS IS THE FIRST VIDEO WHAT I MADE.</h5>
+  <p><br>
+  <li>  <strong>TAKE BEAUTIFUL IMAGES FROM VIRTUAL SPACES.</strong></li>
+  <br>  <img src="image1.jpg" width="80%">
+  <br>  <img src="image2.jpg" width="80%"> Commercial Design
+  <br>  <p><img src="living.png" width="80%"> Living Design</p>
+
+  <p><br>
+    <li><strong>EXPRESSING CREATED SPACE AS A DRAWING</strong></li>
+    <p><img src="plan.png" width="80%">
+  <img src="plan2.png" width="80%"> Floor Plan</p>
+  </ul>
+</div>
+</div>
 
 <p>
   <div id="disqus_thread"></div>
@@ -54,7 +133,5 @@
 
 
 </p>
-
-
-
+</body>
 </html>

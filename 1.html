@@ -6,44 +6,67 @@
 <style>
   body{
     margin:0;
+   overflow: overlay;
   }
     a {color:black;
       text-decoration: none;
     }
-  h1 {
-    font-size:35px;
-    text-align: center;
-    border-bottom:1px solid gray;
-    margin:0;
-    padding:20px;
-  }
+    h1 {
+      font-size:35px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+      }
+
+ body::-webkit-scrollbar {
+   width:10px;
+ }
+ body::-webkit-scrollbar-thumb {
+   background-color: rgba(0,0,0, 0.3);
+   border-radius: 100px;
+ }
   .insta {
    margin:0;
    font-size: 25px;
-
     border-bottom:1px solid violet;
     width: 130px;
     color: violet;
   }
-  ol{
+  #grid ol{
     border-right:1px solid gray;
     width: 150px;
-    margin:5px;
+    margin:0;
     padding: 20px;
+    padding-left: 33px;
   }
   #grid{
     display: grid;
-    grid-template-columns: 220px 1fr 1fr;
+    grid-template-columns: 214px 1fr;
     }
   #active {color :red;}
+  #article{
+      padding-left: 20px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1 {
+      border-bottom: none;
+    }
+  }
 </style>
 
 </head>
+
 <body>
   <h1><a href="index.html">WHO IS THIS GUY?</a></h1>
 
 <div id="grid">
-
     <ol>
       <li> <a href="1.html" id="active">INTRODUCE</a></li>
       <li> <a href="2.html">LICENSE</a></li>
@@ -52,7 +75,7 @@
     </ol>
 
 
-  <div>
+  <div id="article">
     <h2>INTRODUCE 알아보기</h2>
     <br>LET ME INTRODUCE MYSELF.<p>
     <br>HELLO MY NAME IS <strong>TAEWAN KOO.</strong>
@@ -66,14 +89,14 @@
     AND MAKE THIS <br>DOCUMENT SEEMS MORE PROFESSIONAL.<br>
     <p><strong>AM I LOOK LIKE <u>PROFESSIONAL?</u></strong><p>
 
-      <img src="main.jpg" width=100%>
+      <img src="main.jpg" width=80%>
         <p><h5>
           THIS PROJECT WAS PLANED TO BUILD COMMERCIAL SPACE IN SEOUL IN SOUTH KOREA.<br>
         WE DECIDED TO BUILD THE STORE FOR ACNE STUDIO WHICH IS A FASHION BRAND LAUNCHED IN SWEDEN.<br>
         SO WE TRY TO COMPOUND MINIMALISM WITH KOREA TRADITIONAL ARCHITECTURAL ELEMENTS.</P><h5>
 
 
-  <img src="room.png" width=550px>
+  <img src="room.png" width=80%>
       <p><h5>THIS IMAGE SHOWS THE WAY OF HOW MEDICAL SPACE SHOULD DEVELOP.<br>
         AS TECHNOLOGY ADVANCES OVER TIME, THE RELATIONSHIP BETWEEN MEDICAL STAFF AND PATIENT
         WILL BE CONSIDERED AS A SIGNIFICANT FACTOR WHEN PLANNING THE SPATIAL PROGRAME.<br>
@@ -89,7 +112,7 @@
     WHY THAT SENTENCES HAS NOT DISTINGISHED IN WEB DOCUMENT LET ME KNOW THE REASON.
     <br>OH MY GOD I SUDDENLY REALIZE THAT I'M BETTER AT ENGLISH AS FAR AS I THOUGHT!!
 
-</div>
+ </div>
 </div>
 
 <p>

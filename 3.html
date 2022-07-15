@@ -1,18 +1,75 @@
 <!doctype html>
 <html>
 <head>
-  <title>WHO IS THIS GUY? - INTRODUCE</title>
+  <title>WHO IS THIS GUY? - PORTFOLIO</title>
   <meta charset="utf-8">
+<style>
+  body{
+    margin:0;
+    overflow: overlay;
+  }
+    a {color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:35px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+      }
+      body::-webkit-scrollbar {
+        width:10px;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0, 0.3);
+        border-radius: 100px;
+      }
+
+   #grid ol{
+      border-right:1px solid gray;
+      width: 150px;
+      margin:0px;
+      padding: 20px;
+      padding-left: 33px;
+    }
+  #grid{
+    display: grid;
+    grid-template-columns: 214px 1fr;
+  }
+  #active{color:red;}
+  #article{
+     padding-left: 20px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1 {
+      border-bottom: none;
+    }
+  }
+</style>
+
 </head>
 <body>
   <h1><a href="index.html">WHO IS THIS GUY?</a></h1>
-<ol>
-  <li> <a href="1.html">INTRODUCE</a></li>
-  <li> <a href="2.html">LICENSE</a></li>
-  <li> <a href="3.html">PORTFOLIO</a></li>
-  <li> <a href="4.html">POTENTIAL</a></li>
-</ol>
-<h2>Sorry, It Is Ongoing. SEE YOU SOON!</h2>
+<div id="grid">
+  <ol>
+    <li> <a href="1.html">INTRODUCE</a></li>
+    <li> <a href="2.html">LICENSE</a></li>
+    <li> <a href="3.html" id="active">PORTFOLIO</a></li>
+    <li> <a href="4.html">POTENTIAL</a></li>
+  </ol>
+
+  <div id="article">
+  <h2>Sorry, It Is Ongoing. SEE YOU SOON!</h2>
+
+ </div>
+</div>
 
 <p>
   <div id="disqus_thread"></div>
@@ -37,8 +94,5 @@
 
 
 </p>
-
-
-
 </body>
 </html>
